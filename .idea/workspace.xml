@@ -22,10 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="manifest.json" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="manifest.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="17" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
+            <state line="2" column="17" selection-start="50" selection-end="50" vertical-scroll-proportion="0.052447554">
               <folding />
             </state>
           </provider>
@@ -58,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="24" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.52797204">
+            <state line="76" column="24" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,10 +84,10 @@
       <list>
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/popup.html" />
-        <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/options.html" />
         <option value="$PROJECT_DIR$/js/application.js" />
         <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/manifest.json" />
       </list>
     </option>
   </component>
@@ -274,13 +274,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/popup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="24" selection-start="586" selection-end="586" vertical-scroll-proportion="-15.625">
@@ -304,7 +297,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="24" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.52797204">
+        <state line="76" column="24" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="50" selection-end="50" vertical-scroll-proportion="0.052447554">
           <folding />
         </state>
       </provider>
