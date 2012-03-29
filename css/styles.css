@@ -2,6 +2,7 @@ body {
     min-width:500px;
     font-family: Arial, Sans-Serif;
     line-height: 1;
+    overflow-x: hidden;
 }
 h1, h2 {
     margin-bottom: .4em;
@@ -31,7 +32,7 @@ ul {
     margin:0px;
 }
 #global-header {
-    width:100%;
+    width:90%;
     margin: 0 auto;
     padding: 0px;
 
@@ -102,10 +103,13 @@ ul {
     font-size: 1.2em;
 }
 .logo {padding:15px;}
-.result {margin-bottom: 50px;}
+.result {
+
+    margin-bottom: 50px;}
 .main-header {
     position: relative;
     border-bottom: 1px solid #DFDFDF;
+    width:95%;
     padding: 10px 10px 10px;
 }
 
