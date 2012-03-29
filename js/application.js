@@ -76,10 +76,7 @@ var sparcet = {
 
          });
 
-        $("body").delegate("#alerting","click", function() {
-            sparcet.restore_options();
 
-        });
 
         // Restores select box state to saved value from localStorage.
 
