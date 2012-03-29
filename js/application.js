@@ -8,7 +8,7 @@ var sparcet = {
     initStyling: function () {
             var tenant_option = localStorage["sparcet_tenant"] ? localStorage["sparcet_tenant"] : "sparc";
             var numSparcet_option = localStorage["sparcet_number"] ? localStorage["sparcet_number"] : "10";
-            var url = 'https://' + tenant_option + '.sparcet.com/api/sparcets?limit=' + numSparcet_option
+            var url = 'https://' + tenant_option + '.sparcet.com/api/sparcets?limit=' + numSparcet_option;
         $.getJSON(url, function(results) {
             var output = '';
             var $sparcetList = $(".result ul");
@@ -18,7 +18,7 @@ var sparcet = {
 
             $.each(results.data, function(index, value) {
 
-               output += "<p class='sparcet-summary'><img class='profile-pic to-user' style='width:40px;height:40px;' src='"
+               output += "<p class='sparcet-summary'><img class='profile-pic to-user' src='"
                     + baseImgURL + this.to.id
                     + "/img_Profile' alt='"
                     + this.from.name + "' /><img class='award' src='img/"
@@ -46,13 +46,24 @@ var sparcet = {
         var $select = $("#tenant_choice");
         var tenant = $select.val();
         var $numSparcets = $("#num_sparcets").val();
-        localStorage["sparcet_tenant"] = tenant;
-        localStorage["sparcet_number"] = $numSparcets;
+        if (!tenant) {
+            tenant = "sparc";
+        } else {
+            localStorage["sparcet_tenant"] = tenant;
+        }
+
+        if (!$numSparcets) {
+            $numSparcets = 10;
+        } else {
+            localStorage["sparcet_number"] = $numSparcets;
+        }
+
+
         // Update status to let user know options were saved.
-        var status = $("#status");
-        status.html("<h2 style='color:green'>Options Saved.</h2>");
+        var $status = $("#status");
+        $status.html("<h2 style='color:green'>Options Saved.</h2>");
         setTimeout(function() {
-            status.html("");
+            $status.html("");
         }, 750);
 
     },
@@ -71,7 +82,7 @@ var sparcet = {
 
              // add some events, yo
 
-        $("body").delegate("#save","click", function() {
+        $("#main").delegate("#save","click", function() {
             sparcet.save_options();
 
          });
