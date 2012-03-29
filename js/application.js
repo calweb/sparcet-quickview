@@ -6,7 +6,7 @@ $(function() {
 var sparcet = {
 
     initStyling: function () {
-        $.getJSON('https://sparc.sparcet.com/api/sparcets?limit=5', function(results) {
+        $.getJSON('https://sparc.sparcet.com/api/sparcets?limit=10', function(results) {
             var output = '';
             var $sparcetList = $(".result ul");
             //var items = results.data;
@@ -14,11 +14,6 @@ var sparcet = {
 
 
             $.each(results.data, function(index, value) {
-//                output += "<div class='sparcet-detail'><li>"
-//                    +"<img style='width:40px;height:40px;' src='"
-//                    + baseImgURL + this.to.id
-//                    + "/img_Profile' /></li><li>"
-//                    + this.reason + "</li></div>";
 
                output += "<p class='sparcet-summary'><img class='profile-pic to-user' style='width:40px;height:40px;' src='"
                     + baseImgURL + this.to.id
@@ -34,13 +29,15 @@ var sparcet = {
             });
 
 
+
+
         });
 
     },
 
     initEvents: function () {
 
-
+             // add some events, yo
 
 
     }
