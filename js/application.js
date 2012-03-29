@@ -26,7 +26,7 @@ var sparcet = {
                     + this.from.name + "</span></a></p><div class='sparcet-detail'><span class='reason linkscrape'>"
                     + this.reason +"</span><span class='name from-user'>-"
                     + this.from.name + "</span><img class='profile-pic from-user' style='width:40px;height:40px;' src='"
-                    + baseImgURL + this.from.id + "/img_Profile' /></div><div style='clear:both'></div>";
+                    + baseImgURL + this.from.id + "/img_Profile' /></div><hr><div style='clear:both'></div>";
 
                 $sparcetList.html(output);
             });
