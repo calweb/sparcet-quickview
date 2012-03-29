@@ -18,7 +18,10 @@ var sparcet = {
                output += "<p class='sparcet-summary'><img class='profile-pic to-user' style='width:40px;height:40px;' src='"
                     + baseImgURL + this.to.id
                     + "/img_Profile' alt='"
-                    + this.from.name + "' /><span class='name to-user subject'>"
+                    + this.from.name + "' /><img class='award' src='img/"
+                   + this.type
+                   + ".png' alt='"
+                   + this.from.name + "' /><span class='name to-user subject'>"
                     + this.to.name + "</span> got a sparcet from <span class='name from-user'>"
                     + this.from.name + "</span></a></p><div class='sparcet-detail'><span class='reason linkscrape'>"
                     + this.reason +"</span><span class='name from-user'>-"
