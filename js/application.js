@@ -6,11 +6,14 @@ $(function() {
 var sparcet = {
 
     initStyling: function () {
-        $.getJSON('https://sparc.sparcet.com/api/sparcets?limit=10', function(results) {
+            var tenant_option = localStorage["sparcet_tenant"] ? localStorage["sparcet_tenant"] : "sparc";
+            var numSparcet_option = localStorage["sparcet_number"] ? localStorage["sparcet_number"] : "10";
+            var url = 'https://' + tenant_option + '.sparcet.com/api/sparcets?limit=' + numSparcet_option
+        $.getJSON(url, function(results) {
             var output = '';
             var $sparcetList = $(".result ul");
 
-            var baseImgURL = "https://sparc.sparcet.com/profiles/"
+            var baseImgURL = "https://sparc.sparcet.com/profiles/";
 
 
             $.each(results.data, function(index, value) {
@@ -36,14 +39,51 @@ var sparcet = {
 
         });
 
+
+
+    },
+    save_options: function() {
+        var $select = $("#tenant_choice");
+        var tenant = $select.val();
+        var $numSparcets = $("#num_sparcets").val();
+        localStorage["sparcet_tenant"] = tenant;
+        localStorage["sparcet_number"] = $numSparcets;
+        // Update status to let user know options were saved.
+        var status = $("#status");
+        status.html("<h2 style='color:green'>Options Saved.</h2>");
+        setTimeout(function() {
+            status.html("");
+        }, 750);
+
+    },
+    restore_options: function() {
+        var tenant = localStorage["sparcet_tenant"];
+        if (!tenant) {
+            return;
+        }
+
+
+
+
     },
 
     initEvents: function () {
 
              // add some events, yo
 
+        $("body").delegate("#save","click", function() {
+            sparcet.save_options();
+
+         });
+
+        $("body").delegate("#alerting","click", function() {
+            sparcet.restore_options();
+
+        });
+
+        // Restores select box state to saved value from localStorage.
+
 
     }
-
 
 };

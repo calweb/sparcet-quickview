@@ -5,7 +5,6 @@
 
 
   <script src="js/lib/jquery.min.js"></script>
-  <script src="js/plugins.js"></script>
   <script src="js/application.js"></script>
   <link rel="stylesheet" media="screen" href="css/styles.css" />
 
@@ -21,16 +20,15 @@
   <div class="main-content">
   <h1>Options</h1>
 
+
     <p>This page isn't working yet.</p>
     <form action="">
-    <p>Name of Your Organization: <input type="text" placeholder="name" /> </p>
-      <p>Number of Sparcets to List: <input type="text" placeholder="number" /> </p>
+    <p>Name of Your Organization: <input type="text" id="tenant_choice" placeholder="yourOrganization.sparcet.com" /> </p>
+      <p>Number of Sparcets to List: <input id="num_sparcets"  type="text" placeholder="number of sparcets" /> </p>
     </form>
+    <div id="status"></div>
+    <button id="save">Save</button>
     </div>
 </div>
-
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery.min.js"><\/script>')</script>
 </body>
 </html>
