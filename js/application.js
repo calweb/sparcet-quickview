@@ -13,14 +13,14 @@ var sparcet = {
             var output = '';
             var $sparcetList = $(".result ul");
 
-            var baseImgURL = "https://sparc.sparcet.com/profiles/";
+            var baseImgURL = "https://sparc.sparcet.com/profiles/"; // is this tenant specific?
 
-
+             // build our html
             $.each(results.data, function(index, value) {
 
                output += "<p class='sparcet-summary'><img class='profile-pic to-user' src='"
                     + baseImgURL + this.to.id
-                    + "/img_Profile' alt='"
+                    + "/img_Profile?v=1' alt='"
                     + this.from.name + "' /><img class='award' src='img/"
                    + this.type
                    + ".png' alt='"
@@ -29,23 +29,17 @@ var sparcet = {
                     + this.from.name + "</span></a></p><div class='sparcet-detail'><span class='reason linkscrape'>"
                     + this.reason +"</span><span class='name from-user'>-"
                     + this.from.name + "</span><img class='profile-pic from-user' style='width:40px;height:40px;' src='"
-                    + baseImgURL + this.from.id + "/img_Profile' /></div><hr><div style='clear:both'></div>";
+                    + baseImgURL + this.from.id + "/img_Profile?v=1' /></div><hr><div style='clear:both'></div>";
 
                 $sparcetList.html(output);
             });
-
-
-
-
         });
-
-
-
     },
     save_options: function() {
         var $select = $("#tenant_choice");
         var tenant = $select.val();
         var $numSparcets = $("#num_sparcets").val();
+        //checking empty field values in options ToDo: validation of field input!
         if (!tenant) {
             tenant = "sparc";
         } else {
@@ -57,7 +51,6 @@ var sparcet = {
         } else {
             localStorage["sparcet_number"] = $numSparcets;
         }
-
 
         // Update status to let user know options were saved.
         var $status = $("#status");
@@ -72,10 +65,6 @@ var sparcet = {
         if (!tenant) {
             return;
         }
-
-
-
-
     },
 
     initEvents: function () {
@@ -86,11 +75,6 @@ var sparcet = {
             sparcet.save_options();
 
          });
-
-
-
-        // Restores select box state to saved value from localStorage.
-
 
     }
 

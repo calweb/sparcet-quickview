@@ -31,10 +31,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="16" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.0">
+            <state line="31" column="67" selection-start="1634" selection-end="1634" vertical-scroll-proportion="0.8129371">
               <folding />
             </state>
           </provider>
@@ -43,7 +43,7 @@
       <file leaf-file-name="options.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/options.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="556" selection-end="556" vertical-scroll-proportion="-12.291667">
+            <state line="23" column="71" selection-start="629" selection-end="629" vertical-scroll-proportion="-14.375">
               <folding />
             </state>
           </provider>
@@ -58,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="17" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.7692308">
+            <state line="24" column="128" selection-start="1847" selection-end="1847" vertical-scroll-proportion="-13.846154">
               <folding />
             </state>
           </provider>
@@ -86,8 +86,8 @@
         <option value="$PROJECT_DIR$/popup.html" />
         <option value="$PROJECT_DIR$/options.html" />
         <option value="$PROJECT_DIR$/manifest.json" />
-        <option value="$PROJECT_DIR$/js/application.js" />
         <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/js/application.js" />
       </list>
     </option>
   </component>
@@ -281,6 +281,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/options.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="71" selection-start="629" selection-end="629" vertical-scroll-proportion="-14.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="128" selection-start="1847" selection-end="1847" vertical-scroll-proportion="-13.846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="17" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
@@ -288,23 +302,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/options.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="556" selection-end="556" vertical-scroll-proportion="-12.291667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="16" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="17" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.7692308">
+        <state line="31" column="67" selection-start="1634" selection-end="1634" vertical-scroll-proportion="0.8129371">
           <folding />
         </state>
       </provider>
