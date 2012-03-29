@@ -9,7 +9,7 @@ var sparcet = {
         $.getJSON('https://sparc.sparcet.com/api/sparcets?limit=10', function(results) {
             var output = '';
             var $sparcetList = $(".result ul");
-            //var items = results.data;
+
             var baseImgURL = "https://sparc.sparcet.com/profiles/"
 
 
