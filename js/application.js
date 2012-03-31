@@ -66,6 +66,9 @@ var sparcet = {
             return;
         }
     },
+    createSparcet: function(){
+        // method to add sparcet if/when api becomes available
+    },
 
     initEvents: function () {
 
