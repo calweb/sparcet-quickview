@@ -35,6 +35,21 @@ var sparcet = {
             });
 
         });
+        var ten = localStorage["sparcet_tenant"];
+        var sNum = localStorage["sparcet_number"];
+        if (!localStorage["sparcet_tenant"]) {
+                localStorage["sparcet_tenant"] = "sparc";
+            $("#tenant_choice").val("sparc");
+        } else {
+            $("#tenant_choice").val(ten);
+        }
+        if (!localStorage["sparcet_number"]) {
+            localStorage["sparcet_number"] = "10";
+            $("#num_sparcets").val("10");
+
+        } else {
+            $("#num_sparcets").val(sNum);
+        }
 
     },
     save_options: function() {
