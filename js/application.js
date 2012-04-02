@@ -33,7 +33,9 @@ var sparcet = {
 
                 $sparcetList.html(output);
             });
+
         });
+
     },
     save_options: function() {
         var $select = $("#tenant_choice");
@@ -66,10 +68,6 @@ var sparcet = {
             return;
         }
     },
-    createSparcet: function(){
-        // method to add sparcet if/when api becomes available
-    },
-
     initEvents: function () {
 
              // add some events, yo
