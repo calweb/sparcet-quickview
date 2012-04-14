@@ -3,8 +3,8 @@ This is a simple little chrome extension mainly on here to help people provide a
 ## Options
 Like many chrome extensions, there are a few options for this plugin.  If you actually use Sparcet, you can change it to the name of your company as it appears in the url -
 
-* http://`yourcompany`.sparcet.com
-* You can also change how many individual sparcets you want listed in the popout window (max <= 40 - for now at as far as I know)
+* http://`yourcompany`.sparcet.com  (defaults to http://sparc.sparcet.com)
+* You can also change how many individual sparcets you want listed in the popout window (max <= 40, but defaults to 15)
 
 ## Creating the extension from this code
 
