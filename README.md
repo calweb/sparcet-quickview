@@ -1,5 +1,7 @@
 # Sparcet Quickview
 This is a simple little chrome extension mainly on here to help people provide a base of code to work with if they are curious on how to make a chrome extension, but also for anyone using the [Sparcet](http://www.sparcet.com) application.
+
+You can find the API documentation [HERE](https://github.com/sparcedge/Sparcet-Public)
 ## Options
 Like many chrome extensions, there are a few options for this plugin.  If you actually use Sparcet, you can change it to the name of your company as it appears in the url -
 
