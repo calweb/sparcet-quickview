@@ -20,20 +20,20 @@ sparcet = {
             var baseImgURL = "https://sparc.sparcet.com/profiles/"; // is this tenant specific?
 
              // build our html
-            $.each(results.data, function(index, value) {
+            $.each(results.data, function() {
 
                output += "<p class='sparcet-summary'><img class='profile-pic to-user' src='"
-                    + baseImgURL + this.to.id
-                    + "/img_Profile?v=1' alt='"
-                    + this.from.name + "' /><img class='award' src='img/"
+                   + baseImgURL + this.to.id
+                   + "/img_Profile?v=1' alt='"
+                   + this.from.name + "' /><img class='award' src='img/"
                    + this.type
                    + ".png' alt='"
                    + this.from.name + "' /><span class='name to-user subject'>"
-                    + this.to.name + "</span> got a sparcet from <span class='name from-user'>"
-                    + this.from.name + "</span></a></p><div class='sparcet-detail'><span class='reason linkscrape'>"
-                    + this.reason +"</span><span class='name from-user'>-"
-                    + this.from.name + "</span><img class='profile-pic from-user' style='width:40px;height:40px;' src='"
-                    + baseImgURL + this.from.id + "/img_Profile?v=1' /></div><hr><div style='clear:both'></div>";
+                   + this.to.name + "</span> got a sparcet from <span class='name from-user'>"
+                   + this.from.name + "</span></a></p><div class='sparcet-detail'><span class='reason linkscrape'>"
+                   + this.reason +"</span><span class='name from-user'>-"
+                   + this.from.name + "</span><img class='profile-pic from-user' style='width:40px;height:40px;' src='"
+                   + baseImgURL + this.from.id + "/img_Profile?v=1' /></div><hr><div style='clear:both'></div>";
                 $sparcetList.remove("#ajaxloader");
                 $sparcetList.html(output);
             });
@@ -42,13 +42,13 @@ sparcet = {
 
         if (!tenantStore) {
                 tenantStore = "sparc";
-            $("#tenant_choice").val("sparc");
+            $("#tenant_choice").val(tenantStore);
         } else {
             $("#tenant_choice").val(tenantStore);
         }
         if (!sNum) {
             sNum = "10";
-            $("#num_sparcets").val("10");
+            $("#num_sparcets").val(sNum);
 
         } else {
             $("#num_sparcets").val(sNum);
@@ -61,7 +61,7 @@ sparcet = {
         var numSparcets = $("#num_sparcets").val();
         //checking empty field values in options ToDo: validation of field input!
         if (!tenant) {
-            tenant = "sparc";
+            localStorage.sparcet_tenant = "sparc";
         } else {
             localStorage.sparcet_tenant = tenant;
         }
