@@ -80,12 +80,6 @@ sparcet = {
         }, 1000);
 
     },
-    restore_options: function() {
-        var tenant = localStorage.sparcet_tenant;
-        if (!tenant) {
-            return;
-        }
-    },
     initEvents: function () {
 
 
