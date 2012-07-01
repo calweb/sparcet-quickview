@@ -6,7 +6,7 @@ You can find the API documentation [HERE](https://github.com/sparcedge/Sparcet-P
 Like many chrome extensions, there are a few options for this plugin.  If you actually use Sparcet, you can change it to the name of your company as it appears in the url -
 
 * http://`yourcompany`.sparcet.com  (defaults to http://sparc.sparcet.com)
-* You can also change how many individual sparcets you want listed in the popout window (max <= 40, but defaults to 15)
+* You can also change how many individual sparcets you want listed in the popout window
 
 ## Creating the extension from this code
 
