@@ -7,11 +7,12 @@ $(function() {
 sparcet = {
 
     initStyling: function () {
-      var tenant_option = localStorage.sparcet_tenant ? localStorage.sparcet_tenant : "sparc";
-      var numSparcet_option = localStorage.sparcet_number ? localStorage.sparcet_number : "10";
-      var url = 'https://' + tenant_option + '.sparcet.com/api/sparcets?limit=' + numSparcet_option;
       var tenantStore = localStorage.sparcet_tenant;
       var sNum = localStorage.sparcet_number;
+      var tenant_option = tenantStore ? tenantStore : "sparc";
+      var numSparcet_option = sNum ? sNum : "10";
+      var url = 'https://' + tenant_option + '.sparcet.com/api/sparcets?limit=' + numSparcet_option;
+
         $.getJSON(url, function(results) {
             var output = '';
             var $sparcetList = $(".result ul");
@@ -76,7 +77,7 @@ sparcet = {
         $status.html("<h2 style='color:green'>Options Saved.</h2>");
         setTimeout(function() {
             $status.html("");
-        }, 750);
+        }, 1000);
 
     },
     restore_options: function() {
